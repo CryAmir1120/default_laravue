@@ -17,10 +17,9 @@ class EmployeeAccess
      */
     public function handle(Request $request, Closure $next)
     {
-        $user = $request->user();
-        $role = $user->role;
+        $role = auth()->user()->role;
         if($role != User::EMPLOYEE) {
-            abort(403);
+            return redirect()->route('role.provider');
         }
         return $next($request);
     }

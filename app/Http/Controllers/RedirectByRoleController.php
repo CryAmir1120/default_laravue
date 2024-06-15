@@ -11,9 +11,9 @@ class RedirectByRoleController extends Controller
     {
         $role = auth()->user()->role;
         if ($role == User::ADMIN) {
-            return redirect(route('admin.dakoku.index'));
+            return redirect()->intended(route('admin.dakoku.index'));
         } else {
-            return redirect(route('employee.home'));
+            return redirect()->intended(route('employee.home'));
         }
     }
 }

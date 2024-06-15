@@ -20,9 +20,7 @@ use Inertia\Inertia;
 
 
 Route::middleware('auth')->group(function () {
-
     Route::get('/redirect_by_role', RedirectByRoleController::class)->name('role.provider');
-    
     Route::group(['middleware' => 'admin', 'prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::group(['prefix' => 'employees', 'as' => 'employees.'], function () {
             Route::get('/', [EmployeeManagerController::class, 'index'])->name('index');
@@ -48,4 +46,5 @@ Route::middleware('auth')->group(function () {
 Route::fallback(function () {
     return Inertia::render("Errors/404");
 })->name('404page');
+
 require __DIR__ . '/auth.php';
