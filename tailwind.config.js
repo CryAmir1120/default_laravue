@@ -14,7 +14,8 @@ module.exports = {
             fontFamily: {
                 sans: 'Noto Sans JP',
                 serif: 'Noto Serif JP',
-                arial: 'Arial'
+                arial: 'Arial',
+                yuji: 'Yuji Syuku'
             },
             fontSize: {
                 8: "8px",

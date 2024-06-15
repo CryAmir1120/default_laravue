@@ -1,0 +1,45 @@
+.dark-theme {
+    background-color: #1f2937;
+    color: #f0f0f0;
+    .p-inputtext {
+        background-color: #111827;
+        color: #e0e0e0;
+        border-color: #1e1b4b;
+        &:focus {
+            box-shadow: unset;
+        }
+        &::placeholder {
+            color: #a0a0a0;
+        }
+    }
+    .p-input-icon {
+        color: #e0e0e0;
+    }
+    .p-button {
+        box-shadow: unset;
+    }
+    .dp__main {
+        border-color: #661ae6;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    .dp__input {
+        background-color: #111827;
+        border-color: #1e1b4b;
+        color: white;
+    }
+}
+.light-theme {
+    background-color: #f3f4f6;
+    color: #111936;
+    .p-inputtext {
+        
+    }
+    .p-input-icon {
+        color: #000;
+    }
+}
+

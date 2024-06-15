@@ -44,4 +44,7 @@ export default defineConfig({
     ssr: {
         noExternal: ['@inertiajs/server'],
     },
+    server: {
+      host: '127.0.0.1',
+    }
 });

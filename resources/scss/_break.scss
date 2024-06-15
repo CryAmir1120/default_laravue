@@ -1,0 +1,33 @@
+// ===== Media Queries =====
+// ブレイクポイントはBootstrapと同じ
+// min-width
+$breakpoint-up: (
+  "xs": "screen and (min-width: 376px)",
+  "sm": "screen and (min-width: 544px)",
+  "md": "screen and (min-width: 769px)",
+  "lg": "screen and (min-width: 1025px)",
+  "xl": "screen and (min-width: 1281px)",
+  "xxl": "screen and (min-width: 1440px)",
+  "xxxl": "screen and (min-width: 1670px)",
+) !default;
+// max-width
+$breakpoint-down: (
+  "xs": "screen and (max-width: 375px)",
+  "sm": "screen and (max-width: 543px)",
+  "md": "screen and (max-width: 768px)",
+  "lg": "screen and (max-width: 1024px)",
+  "xl": "screen and (max-width: 1280px)",
+  "xxl": "screen and (max-width: 1439px)",
+  "xxxl": "screen and (max-width: 1669px)",
+) !default;
+// @mixinの定義
+@mixin mq-up($breakpoint: md) {
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
+@mixin mq-down($breakpoint: md) {
+  @media #{map-get($breakpoint-down, $breakpoint)} {
+    @content;
+  }
+}

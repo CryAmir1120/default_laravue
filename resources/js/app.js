@@ -66,13 +66,18 @@ import "primevue/resources/themes/lara-light-blue/theme.css";
 // import "primevue/resources/primevue.min.css";
 import "primeicons/primeicons.css";
 
+import AdminLayout from '@/Layouts/AdminLayout.vue';
+import EmployeeLayout from '@/Layouts/EmployeeLayout.vue';
+import InputLabel from '@/Components/InputLabel.vue'
+import Pagination from '@/Components/ui/Pagination.vue'
+
 import { createApp, h } from "vue";
 import { createInertiaApp, Link, Head } from "@inertiajs/vue3";
 import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
 import { ZiggyVue } from "../../vendor/tightenco/ziggy/dist/vue.m";
 
 const appName =
-    window.document.getElementsByTagName("title")[0]?.innerText || "Sales";
+    window.document.getElementsByTagName("title")[0]?.innerText || "出退勤管理システム";
 
 createInertiaApp({
     title: (title) => `${title}｜${appName}`,
@@ -127,6 +132,10 @@ createInertiaApp({
             .component("VueDatePicker", VueDatePicker)
             .component("Rating", Rating)
             .component("Chart", Chart)
+            .component("AdminLayout", AdminLayout)
+            .component("EmployeeLayout", EmployeeLayout)
+            .component("InputLabel", InputLabel)
+            .component("Pagination", Pagination)
             .mount(el);
     },
     progress: {
