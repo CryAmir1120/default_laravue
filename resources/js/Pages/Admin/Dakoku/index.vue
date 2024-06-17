@@ -88,6 +88,7 @@ const handleExport = () => {
         console.error(err);
     }).finally(() => {
         loading.value = false;
+        visibleDialog.value = false;
     })
 }
 </script>
