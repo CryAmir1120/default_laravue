@@ -42,7 +42,7 @@ class DakokuManageController extends Controller
         })
             ->when($code, function ($query) use ($code) {
                 $query->whereRelation('user', 'code', 'like', '%' . $code . '%');
-            })->paginate(50);
+            })->orderBy('dp_target_date', 'desc')->paginate(50);
         return Inertia::render('Admin/Dakoku/index', compact('data'));
     }
 
