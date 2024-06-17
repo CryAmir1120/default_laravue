@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\DakokuManageController;
 use App\Http\Controllers\Admin\EmployeeManagerController;
 use App\Http\Controllers\Employee\HomeController;
 use App\Http\Controllers\RedirectByRoleController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -33,6 +34,7 @@ Route::middleware('auth')->group(function () {
         });
         Route::group(['prefix' => 'dakoku', 'as' => 'dakoku.'], function () {
             Route::get('/', [DakokuManageController::class, 'index'])->name('index');
+            Route::post('/export', [DakokuManageController::class, 'export_excel'])->name('export.excel');
         });
     });
     
@@ -47,4 +49,16 @@ Route::fallback(function () {
     return Inertia::render("Errors/404");
 })->name('404page');
 
+Route::get('/download', function (Request $req) {
+    session()->reflash();
+    $is_delete = $req->input('is_delete');
+    if(!$req->file_path || !file_exists(public_path($req->file_path))) {
+        return redirect()->back();
+    }
+    if ($is_delete) {
+        return response()->download(public_path($req->file_path))->deleteFileAfterSend();
+    } else {
+        return response()->download(public_path($req->file_path));
+    }
+})->name('file_download');
 require __DIR__ . '/auth.php';
