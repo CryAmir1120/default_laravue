@@ -39,7 +39,7 @@ onBeforeUnmount(() => {
 <style lang="scss" scoped>
 .guest-layout {
     position: relative;
-    background-image: url('assets/img/background/bg-lg-01.webp');
+    background-image: url('../../../../public/assets/img/background/bg-lg-01.webp');
     background-size: cover;
     background-position: center;
     z-index: 0;
