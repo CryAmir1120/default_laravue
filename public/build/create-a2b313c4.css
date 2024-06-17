@@ -1,0 +1,19 @@
+.dark-theme .content[data-v-8e1b94d4] {
+  background-color: #374151;
+}
+.light-theme .content[data-v-8e1b94d4] {
+  background-color: #d1d5db;
+}
+.rows[data-v-8e1b94d4] {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 576px) {
+.rows[data-v-8e1b94d4] {
+    display: block;
+}
+}
+.rows > div[data-v-8e1b94d4]:first-child {
+  text-align: center;
+}

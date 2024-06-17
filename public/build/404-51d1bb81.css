@@ -1,0 +1,136 @@
+.dark-theme[data-v-e41d69d6] {
+  background-color: #1f2937;
+  color: #f0f0f0;
+}
+.dark-theme .p-inputtext[data-v-e41d69d6] {
+  background-color: #111827;
+  color: #e0e0e0;
+  border-color: #1e1b4b;
+}
+.dark-theme .p-inputtext[data-v-e41d69d6]:focus {
+  box-shadow: unset;
+}
+.dark-theme .p-inputtext[data-v-e41d69d6]::-moz-placeholder {
+  color: #a0a0a0;
+}
+.dark-theme .p-inputtext[data-v-e41d69d6]::placeholder {
+  color: #a0a0a0;
+}
+.dark-theme .p-input-icon[data-v-e41d69d6] {
+  color: #e0e0e0;
+}
+.dark-theme .p-button[data-v-e41d69d6] {
+  box-shadow: unset;
+}
+.dark-theme .dp__main[data-v-e41d69d6] {
+  border-color: #661ae6;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.dark-theme .dp__input[data-v-e41d69d6] {
+  background-color: #111827;
+  border-color: #1e1b4b;
+  color: white;
+}
+.dark-theme .p-dialog-header[data-v-e41d69d6], .dark-theme .p-dialog-content[data-v-e41d69d6] {
+  background-color: #3f3f46;
+  color: #e0e0e0;
+}
+.light-theme[data-v-e41d69d6] {
+  background-color: #f3f4f6;
+  color: #111936;
+}
+.light-theme .p-input-icon[data-v-e41d69d6] {
+  color: #000;
+}
+#notfound[data-v-e41d69d6] {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#notfound .notfound[data-v-e41d69d6] {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: 710px;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+@media screen and (max-width: 543px) {
+#notfound .notfound[data-v-e41d69d6] {
+    max-width: 100%;
+}
+}
+#notfound .notfound .notfound-404[data-v-e41d69d6] {
+  position: relative;
+  z-index: -1;
+}
+#notfound .notfound .notfound-404 h1[data-v-e41d69d6] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 260px;
+  margin: 0px;
+  font-weight: 900;
+  -webkit-user-select: none;
+  transition: 1s ease;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4392156863);
+}
+@media screen and (max-width: 768px) {
+#notfound .notfound .notfound-404 h1[data-v-e41d69d6] {
+    font-size: 160px;
+}
+}
+@media screen and (max-width: 543px) {
+#notfound .notfound .notfound-404 h1[data-v-e41d69d6] {
+    font-size: 100px;
+}
+}
+#notfound .notfound h2[data-v-e41d69d6] {
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-weight: 700;
+}
+@media screen and (max-width: 543px) {
+#notfound .notfound h2[data-v-e41d69d6] {
+    font-size: 16px;
+}
+}
+#notfound .notfound .gradient-txt[data-v-e41d69d6] {
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #fbbf24, #ea580c);
+  -webkit-text-fill-color: transparent;
+}
+#notfound .notfound .go-to-top[data-v-e41d69d6] {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1;
+  justify-content: center;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 40px;
+  font-weight: 700;
+}
+#notfound .notfound .go-to-top i[data-v-e41d69d6] {
+  margin-top: 4px;
+}
+.dark-theme .page-404[data-v-e41d69d6] {
+  background-color: #1a223f;
+}
+.dark-theme #notfound .notfound-404 h1[data-v-e41d69d6] {
+  color: white;
+}
+.light-theme .page-404[data-v-e41d69d6] {
+  background-color: #b1badd;
+}
+.light-theme #notfound .notfound-404 h1[data-v-e41d69d6] {
+  color: #1a223f;
+}
